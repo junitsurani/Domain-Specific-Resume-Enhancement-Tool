@@ -1,0 +1,6 @@
+<form method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  <input type="text" name="title_pdf" />
+  <input type="file" id="docpicker" name="upload_files" accept=".pdf" />
+  <button type="submit">Upload PDF</button>
+</form>

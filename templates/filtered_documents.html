@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Filtered Documents</title>
+  </head>
+  <body>
+    <h1>Filtered Documents</h1>
+
+    <ul>
+      {% for document in filtered_documents %}
+      <li>{{ document.text }}</li>
+      {% endfor %}
+    </ul>
+
+    <a href="{% url 'dashboard' %}">Back to Dashboard</a>
+  </body>
+</html>

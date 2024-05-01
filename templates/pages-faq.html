@@ -1,0 +1,445 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>F.A.Q</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+
+    <!-- Favicons -->
+    <link
+      href="{% static 'assets/img/apple-touch-icon.png' %}"
+      rel="apple-touch-icon"
+    />
+
+    <!-- Google Fonts -->
+    <link href="{% static 'https://fonts.gstatic.com' %}" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+
+    <!-- Vendor CSS Files -->
+    <link
+      href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/boxicons/css/boxicons.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/quill/quill.snow.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/quill/quill.bubble.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/remixicon/remixicon.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static 'assets/vendor/simple-datatables/style.css' %}"
+      rel="stylesheet"
+    />
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet" />
+
+    <!-- =======================================================
+  * Template Name: NiceAdmin
+  * Updated: Sep 18 2023 with Bootstrap v5.3.2
+  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  </head>
+
+  <body>
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span class="d-none d-lg-block">PORTFOLIO.AI</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
+      </div>
+      <!-- End Logo -->
+
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/profile-img.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >K. Anderson</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Kevin Anderson</h6>
+                <span>Web Designer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a
+                  class="dropdown-item d-flex align-items-center"
+                  href="users-profile.html"
+                >
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
+        </ul>
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="dashboard">
+            <i class="bi bi-grid"></i>
+
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
+
+        <li class="nav-heading"></li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+            <i class="bi bi-question-circle"></i>
+            <span>F.A.Q</span>
+          </a>
+        </li>
+        <!-- End F.A.Q Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="contact">
+            <i class="bi bi-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+        <!-- End Contact Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Frequently Asked Questions</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="Dashboard.html">Dashboard</a>
+            </li>
+            <li class="breadcrumb-item active">Frequently Asked Questions</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
+
+      <section class="section faq">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- F.A.Q Group 2 -->
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Deserunt ut unde corporis</h5>
+
+                <div class="accordion accordion-flush" id="faq-group-2">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-target="#faqsTwo-1"
+                        type="button"
+                        data-bs-toggle="collapse"
+                      >
+                        How will the system provide personalized project
+                        suggestions to users?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqsTwo-1"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faq-group-2"
+                    >
+                      <div class="accordion-body" style="text-align: justify">
+                        The system provides personalized project recommendations
+                        by creating user profiles based on skills and interests,
+                        analyzing user data and project content. It employs
+                        collaborative and content-based filtering, machine
+                        learning algorithms, and real-time updates to suggest
+                        tailored projects. <br /><br />
+                        These recommendations adapt to users' changing interests
+                        and career goals and incorporate user feedback for
+                        improvement. Explanations are provided for each
+                        recommendation, and A/B testing ensures ongoing
+                        optimization, enhancing user engagement and aligning
+                        projects with individual skills and interests.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-target="#faqsTwo-2"
+                        type="button"
+                        data-bs-toggle="collapse"
+                      >
+                        What is the primary objective of this AI-powered system?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqsTwo-2"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faq-group-2"
+                    >
+                      <div class="accordion-body" style="text-align: justify">
+                        The primary objective of this AI-powered system is to
+                        automate the recognition and categorization of user
+                        projects within portfolios while providing tailored
+                        project suggestions. By analyzing project content and
+                        user profiles, it helps users diversify their portfolios
+                        and increases their chances of securing job
+                        opportunities and skill development. <br /><br />
+                        Additionally, the system goes beyond simple
+                        recommendations, offering comprehensive support and
+                        guidance in areas of user interest. This personalized
+                        approach not only streamlines project selection but also
+                        aids users in expanding their skills and pursuing career
+                        opportunities in a competitive job market.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-target="#faqsTwo-3"
+                        type="button"
+                        data-bs-toggle="collapse"
+                      >
+                        How will the system ensure data privacy and security for
+                        the users' portfolios?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqsTwo-3"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faq-group-2"
+                    >
+                      <div class="accordion-body" style="text-align: justify">
+                        The system places a strong emphasis on ensuring data
+                        privacy and security for users' portfolios. It
+                        implements stringent security measures, including robust
+                        data encryption protocols and access controls, to
+                        safeguard sensitive user information. Additionally, user
+                        data is anonymized and aggregated to protect individual
+                        identities, and compliance with data protection
+                        regulations is a top priority. <br /><br />
+                        Furthermore, the system provides users with clear
+                        privacy settings and consent options, allowing them to
+                        control the visibility of their projects and data. It
+                        also regularly undergoes security audits and updates to
+                        address potential vulnerabilities, guaranteeing the
+                        highest level of data protection for its users.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-target="#faqsTwo-4"
+                        type="button"
+                        data-bs-toggle="collapse"
+                      >
+                        What impact do you envision this system having on the
+                        job market and users' career prospects?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqsTwo-4"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faq-group-2"
+                    >
+                      <div class="accordion-body" style="text-align: justify">
+                        he envisioned impact of this system on the job market
+                        and users' career prospects is substantial. By
+                        automating project recognition and offering personalized
+                        suggestions, it equips users with diversified portfolios
+                        and relevant skills, significantly enhancing their
+                        attractiveness to employers. This, in turn, increases
+                        their competitiveness in securing internships, jobs, and
+                        freelancing work.
+
+                        <br /><br />
+                        Moreover, the system's support in guiding users toward
+                        projects and opportunities aligned with their interests
+                        can facilitate career advancement and skill development,
+                        ultimately contributing to a more dynamic and adaptive
+                        job market. The system empowers users to make informed
+                        decisions, fostering career growth and adaptation to
+                        evolving industry demands.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed"
+                        data-bs-target="#faqsTwo-5"
+                        type="button"
+                        data-bs-toggle="collapse"
+                      >
+                        How will the system adapt to different domains or areas
+                        of interest for users?
+                      </button>
+                    </h2>
+                    <div
+                      id="faqsTwo-5"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#faq-group-2"
+                    >
+                      <div class="accordion-body" style="text-align: justify">
+                        The system's adaptability to different domains or areas
+                        of interest for users is achieved through its
+                        flexibility in content analysis and recommendation
+                        algorithms. It utilizes natural language processing and
+                        computer vision techniques that can be fine-tuned to
+                        understand and categorize content across various
+                        domains. Additionally, the machine learning algorithms
+                        that drive recommendations are trained on a wide range
+                        of data, enabling them to adapt to users' unique
+                        interests and expertise in different fields.
+
+                        <br /><br />
+                        Furthermore, the system's collaborative filtering
+                        mechanisms take into account user behavior across
+                        diverse domains, ensuring that recommendations consider
+                        a user's evolving interests. By combining these
+                        approaches, the system can offer personalized project
+                        suggestions that span multiple areas of interest,
+                        facilitating user exploration and skill development in
+                        different domains.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End F.A.Q Group 2 -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+      <div class="copyright">
+        &copy; Copyright <strong><span>PORTFOLIO.AI</span></strong
+        >. All Rights Reserved
+      </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/apexcharts/apexcharts.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/chart.js/chart.umd.js' %}"></script>
+    <script src="{% static 'assets/vendor/echarts/echarts.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/quill/quill.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/simple-datatables/simple-datatables.js' %}"></script>
+    <script src="{% static 'assets/vendor/tinymce/tinymce.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+  </body>
+</html>
